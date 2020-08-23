@@ -27,10 +27,14 @@ To access the Serverless cli you can either use `serverless <command>` or `sls <
     * Python template example: `sls create --template aws-python --path hello-world-python`
     * Now you'll see a new directory called `hello-world-python` with a `handler.py` and `serverless.yml` files.
     
-  * Deploy lambda function to AWS
-    * INSIDE of the lambda function directory, run: `sls deploy -v`
-    * Hop over to AWS and verify that your lambda function was sucessfully deployed.
-    
-  * Run your lambda function locally for dev/testing
-    * INSIDE of the lambda function directory, run: `sls invoke $function-name -l`
-    * The `-l` is for logging
+### Deploy lambda function to AWS
+Serverless can deploy your lambda function directly into AWS
+* Deploy lambda function to AWS:
+  * INSIDE of the lambda function directory, run: `sls deploy -v`
+  * Hop over to AWS and verify that your lambda function was sucessfully deployed.
+
+### Run lambda function locally
+Serverless allows you to run your lambda function locally for testing instead of having to be on the AWS console to do it.    
+* Run your lambda function locally for dev/testing:
+  * INSIDE of the lambda function directory, run: `sls invoke $function-name -l`
+  * The `-l` is for logging
