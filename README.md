@@ -5,7 +5,7 @@ Serverless is a framework which aims to ease the pain of creating, deploying, ma
 
 ### Set up Serverless
 <details>
-  <summary></summary>
+  <summary><h3>Set up Serverless</h3></summary>
   
   * Download Node:
     * `brew install node`
