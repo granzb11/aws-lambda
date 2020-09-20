@@ -69,6 +69,13 @@ Serverless Error ---------------------------------------
 An error occurred: HelloLambdaFunction - Function not found: arn:aws:lambda:us-east-2:410568828559:function:hello-world-python-dev-hello (Service: AWSLambdaInternal; Status Code: 404; Error Code: ResourceNotFoundException; Request ID: 1295f3c6-4621-4cc6-a0ce-8859f3a56c90; Proxy: null).
 ```
 
+Resolution:
+* Open up your `serverless.yml` file and comment out the function having the issue under the `functions` section in this file.
+* Run a `sls deploy`, it should successfully deploy this time.
+* Uncomment your function in the `serverless.yml`
+* Run a `sls deploy`, your function should successfully deploy this time.
+* Source: [stackoverflow](https://stackoverflow.com/questions/58382779/serverless-deploy-function-not-found)
+
 ### Run lambda function locally
 Serverless allows you to run your lambda function locally for testing instead of having to be on the AWS console to do it.    
 * Run your lambda function locally for dev/testing:
