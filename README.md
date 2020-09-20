@@ -57,6 +57,8 @@ provider:
 <br>
 
 > Keep in mind that this deploys the WHOLE stack to AWS, not just your one function that you may have updated.
+> When you initially create a new serverless app, you will HAVE TO deploy the whole stack, but afterwards you are free
+> to just deploy the needed functions.
 > This deployment of the stack depending on the size of your application can end up taking a long time. Read the
 > `Update and deploy lambda function` section to learn how to only deploy specific functions instead of the whole stack.      
   
