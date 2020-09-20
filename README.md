@@ -6,7 +6,9 @@ Serverless is a framework which aims to ease the pain of creating, deploying, ma
 ### Set up Serverless
 <details>
   <summary>How to set up serverless locally.</summary>
-  
+
+<br>
+
   * Download Node:
     * `brew install node`
   * Download Serverless:
@@ -26,7 +28,9 @@ Serverless is a framework which aims to ease the pain of creating, deploying, ma
 ### Create Lambda Function Template
 <details>
   <summary>How to create lambda functions with serverless templates.</summary>
-  
+ 
+<br>
+ 
 Serverless has pre-built templates that help with creating new lambda functions and to deploy them to AWS. 
 To access the Serverless cli you can either use `serverless <command>` or `sls <command>`.
   * Create template with the following command:
@@ -102,6 +106,8 @@ Resolution:
 <details>
   <summary>How to deploy a specific lambda function only.</summary>
 
+<br>
+
 * Make all necessary changes to your function. 
 * Run `sls deploy function -f <function name>`
 * Example: 
@@ -120,6 +126,8 @@ Serverless: Successfully updated function: hello
 <details>
   <summary>How to run lambda functions locally with serverless.</summary>
   
+<br>
+
 Serverless allows you to run your lambda function locally for testing instead of having to be on the AWS console to do it.    
 * Run your lambda function locally for dev/testing:
   * INSIDE of the lambda function directory, run: `sls invoke $function-name -l`.
@@ -129,6 +137,8 @@ Serverless allows you to run your lambda function locally for testing instead of
 ### Fetching function logs
 <details>
   <summary>How to fetch function logs.</summary>
+
+<br>
 
 Once your function is up and live, you will not always be the only one invoking it but you will need to be able to
 retrieve logs for specific executions. AWS stores all function execution logs, serverless allows you to fetch and view
