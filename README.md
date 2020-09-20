@@ -57,8 +57,8 @@ provider:
 <br>
 
 > Keep in mind that this deploys the WHOLE stack to AWS, not just your one function that you may have updated.
-> This deployment of the stack depending on the size of your application can end up taking a long time. Read the below
-> section to learn how to only deploy specific functions instead of the whole stack.      
+> This deployment of the stack depending on the size of your application can end up taking a long time. Read the
+> `Update and deploy lambda function` section to learn how to only deploy specific functions instead of the whole stack.      
   
 Serverless can deploy your lambda function directly into AWS.
 * Deploy lambda function to AWS:
