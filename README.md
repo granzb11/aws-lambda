@@ -126,3 +126,17 @@ Serverless allows you to run your lambda function locally for testing instead of
   * The `-l` is for logging.
 </details>
 
+### Fetching function logs
+<details>
+  <summary>How to fetch function logs.</summary>
+
+Once your function is up and live, you will not always be the only one invoking it but you will need to be able to
+retrieve logs for specific executions. AWS stores all function execution logs, serverless allows you to fetch and view
+these logs via their CLI as well.
+
+> These logs can also be view on the AWS console.
+    
+* Run your lambda function locally for dev/testing:
+  * INSIDE of the lambda function directory, run: `sls invoke $function-name -l`.
+  * The `-l` is for logging.
+</details>
