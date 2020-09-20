@@ -44,6 +44,8 @@ In this file you will see that it is pre-filled with a lot of things, and most o
   * add `profile: <your-iam-user>`
   * add `region <your-aws-region>`
   
+> Run `sls create --help` for all argument options.  
+  
  Example of changes:
 ```
 provider:
