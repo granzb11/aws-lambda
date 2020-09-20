@@ -51,7 +51,7 @@ Serverless can deploy your lambda function directly into AWS.
   
 #### Errors encountered:
 <details>
-  <summary>An error occurred: Function not found</summary>
+  <summary>Serverless deploy - Function not found</summary>
   
 1. 
 
