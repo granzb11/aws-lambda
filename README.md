@@ -46,7 +46,27 @@ provider:
 Serverless can deploy your lambda function directly into AWS.
 * Deploy lambda function to AWS:
   * INSIDE of the lambda function directory, run: `sls deploy -v`.
-  * Hop over to AWS and verify that your lambda function was sucessfully deployed.
+  * Hop over to AWS and verify that your lambda function was successfully deployed.
+  
+Errors encountered:
+1. 
+```
+(base) ~/PycharmProjects/aws-lambda/hello-world-python$ sls deploy -v
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service hello-world-python.zip file to S3 (220 B)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - hello-world-python-dev
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_FAILED - AWS::Lambda::Function - HelloLambdaFunction
+ 
+Serverless Error ---------------------------------------
+An error occurred: HelloLambdaFunction - Function not found: arn:aws:lambda:us-east-2:410568828559:function:hello-world-python-dev-hello (Service: AWSLambdaInternal; Status Code: 404; Error Code: ResourceNotFoundException; Request ID: 1295f3c6-4621-4cc6-a0ce-8859f3a56c90; Proxy: null).
+```
 
 ### Run lambda function locally
 Serverless allows you to run your lambda function locally for testing instead of having to be on the AWS console to do it.    
