@@ -168,7 +168,7 @@ these logs via their CLI as well.
 
 <br>
 
-Serverless allows you to fully remove/delete the service you have built. By doing so, we run into a few problems.
+Typically when removing/deleting a service from AWS, a few problems arise.
 
 We will need to clean up the following:
 1. Function
@@ -176,6 +176,12 @@ We will need to clean up the following:
 3. CloudWatch Log groups
 4. IAM Roles
 5. Everything else the framework has created
+
+Thankfully, serverless can handle all of this for us!
+
+To perform a service removal, do the following:
+* Run `sls remove` and wait for serverless. Keep in mind this might take a little bit depending on your application size.
+* Hop over to the AWS management console and verify that your service has been removed.
 
 > These logs can also be view on the AWS console.
     
