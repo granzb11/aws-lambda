@@ -1,4 +1,4 @@
 def hello(event, context):
-    print("Hello my name is Gustavo")
+    print("Second update")
 
     return "hello world"

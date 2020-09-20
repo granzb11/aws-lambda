@@ -52,13 +52,16 @@ provider:
  
 ### Deploy lambda function to AWS
 <details>
-  <summary>How to deploy lambda functions with serverless.</summary>
+  <summary>How to deploy to AWS with serverless.</summary>
+  
+> Keep in mind that this deploys the WHOLE stack to AWS, not just your one function that you may have updated.
+> This deployment of the stack depending on the size of your application can end up taking a long time. Read the below
+> section to learn how to only deploy specific functions instead of the whole stack.      
   
 Serverless can deploy your lambda function directly into AWS.
 * Deploy lambda function to AWS:
   * INSIDE of the lambda function directory, run: `sls deploy -v`.
   * Hop over to AWS and verify that your lambda function was successfully deployed.
-
   
 #### Errors encountered:
 <details>
@@ -91,11 +94,31 @@ Resolution:
 </details>
 </details>
 
+### Update and deploy lambda function 
+<details>
+  <summary>How to deploy a specific lambda function only.</summary>
+
+* Make all necessary changes to your function. 
+* Run `sls deploy function -f <function name>`
+* Example: 
+```
+(base) ~/PycharmProjects/aws-lambda/hello-world-python$ sls deploy function -f hello
+Serverless: Packaging function: hello...
+Serverless: Excluding development dependencies...
+Serverless: Uploading function: hello (207 B)...
+Serverless: Successfully deployed function: hello
+Serverless: Successfully updated function: hello
+(base) ~/PycharmProjects/aws-lambda/hello-world-py
+```
+</details>
+
 ### Run lambda function locally
 <details>
   <summary>How to run lambda functions locally with serverless.</summary>
+  
 Serverless allows you to run your lambda function locally for testing instead of having to be on the AWS console to do it.    
 * Run your lambda function locally for dev/testing:
   * INSIDE of the lambda function directory, run: `sls invoke $function-name -l`.
   * The `-l` is for logging.
 </details>
+
