@@ -5,7 +5,7 @@ Serverless is a framework which aims to ease the pain of creating, deploying, ma
 
 ### Set up Serverless
 <details>
-  <summary>How to set up serverless</summary>
+  <summary>How to set up serverless locally.</summary>
   * Download Node:
     * `brew install node`
   * Download Serverless:
@@ -91,7 +91,7 @@ Resolution:
 
 ### Run lambda function locally
 <details>
-  <summary>How to run lambda functions locally with serverless</summary>
+  <summary>How to run lambda functions locally with serverless.</summary>
 Serverless allows you to run your lambda function locally for testing instead of having to be on the AWS console to do it.    
 * Run your lambda function locally for dev/testing:
   * INSIDE of the lambda function directory, run: `sls invoke $function-name -l`.
