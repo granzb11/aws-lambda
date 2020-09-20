@@ -3,6 +3,11 @@
 ## Serverless Framework
 Serverless is a framework which aims to ease the pain of creating, deploying, managing, and debugging AWS Lambda functions.
 
+Benefits to using the framework:
+* All using programming (no manual clicks in the AWS console).
+* Can be integrated with Continuous Integration frameworks.
+* Can be integrated with Continuous Delivery frameworks.
+
 ### Set up Serverless
 <details>
   <summary>How to set up serverless locally.</summary>
