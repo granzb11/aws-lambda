@@ -38,13 +38,13 @@ To access the Serverless cli you can either use `serverless <command>` or `sls <
     * Python template example: `sls create --template aws-python --path hello-world-python`.
     * Now you'll see a new directory called `hello-world-python` with a `handler.py` and `serverless.yml` files.
   
+> Run `sls create --help` for all argument options.  
+  
 ### Update `serverless.yml`
 In this file you will see that it is pre-filled with a lot of things, and most of it is commented out. Travel to the
 `provider` section and let's make the following changes:
   * add `profile: <your-iam-user>`
-  * add `region <your-aws-region>`
-  
-> Run `sls create --help` for all argument options.  
+  * add `region <your-aws-region>`  
   
  Example of changes:
 ```
