@@ -160,3 +160,28 @@ these logs via their CLI as well.
   
 > Run `sls logs --help` for all argument options.
 </details>
+
+
+### Destroying the service
+<details>
+  <summary>How to complete remove the service off AWS.</summary>
+
+<br>
+
+Serverless allows you to fully remove/delete the service you have built. By doing so, we run into a few problems.
+
+We will need to clean up the following:
+1. Function
+2. Dependencies on the function
+3. CloudWatch Log groups
+4. IAM Roles
+5. Everything else the framework has created
+
+> These logs can also be view on the AWS console.
+    
+* Run `sls logs -f <function name> -t`
+  * `-f` option is a required argument for the function name.
+  * `-t` option is optional to tail the log output.
+  
+> Run `sls logs --help` for all argument options.
+</details>
