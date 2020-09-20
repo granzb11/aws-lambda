@@ -47,10 +47,14 @@ Serverless can deploy your lambda function directly into AWS.
 * Deploy lambda function to AWS:
   * INSIDE of the lambda function directory, run: `sls deploy -v`.
   * Hop over to AWS and verify that your lambda function was successfully deployed.
-  
-Errors encountered:
 
+  
+#### Errors encountered:
+<details>
+  <summary>An error occurred: Function not found</summary>
+  
 1. 
+
 ```
 (base) ~/PycharmProjects/aws-lambda/hello-world-python$ sls deploy -v
 Serverless: Packaging service...
@@ -75,6 +79,7 @@ Resolution:
 * Uncomment your function in the `serverless.yml`
 * Run a `sls deploy`, your function should successfully deploy this time.
 * Source: [stackoverflow](https://stackoverflow.com/questions/58382779/serverless-deploy-function-not-found)
+</details>
 
 ### Run lambda function locally
 Serverless allows you to run your lambda function locally for testing instead of having to be on the AWS console to do it.    
