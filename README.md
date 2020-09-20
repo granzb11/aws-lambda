@@ -5,8 +5,7 @@ Serverless is a framework which aims to ease the pain of creating, deploying, ma
 
 ### Set up Serverless
 <details>
-  <summary><h3>Set up Serverless</h3></summary>
-  
+  <summary>How to set up serverless</summary>
   * Download Node:
     * `brew install node`
   * Download Serverless:
@@ -24,13 +23,16 @@ Serverless is a framework which aims to ease the pain of creating, deploying, ma
 </details>
 
 ### Create Lambda Function Template
+<details>
+  <summary>How to create lambda functions with serverless templates.</summary>
+  
 Serverless has pre-built templates that help with creating new lambda functions and to deploy them to AWS. 
 To access the Serverless cli you can either use `serverless <command>` or `sls <command>`.
   * Create template with the following command:
     * `sls create --template $language --path $function-name`.
     * Python template example: `sls create --template aws-python --path hello-world-python`.
     * Now you'll see a new directory called `hello-world-python` with a `handler.py` and `serverless.yml` files.
-    
+  
 ### Update `serverless.yml`
 In this file you will see that it is pre-filled with a lot of things, and most of it is commented out. Travel to the
 `provider` section and let's make the following changes:
@@ -45,8 +47,11 @@ provider:
   profile: serverless-admin
   region: us-east-2
 ```
-    
+</details>
+ 
 ### Deploy lambda function to AWS
+<details>
+  <summary>How to deploy lambda functions with serverless.</summary>
 Serverless can deploy your lambda function directly into AWS.
 * Deploy lambda function to AWS:
   * INSIDE of the lambda function directory, run: `sls deploy -v`.
@@ -82,9 +87,13 @@ Resolution:
 * Run a `sls deploy`, your function should successfully deploy this time.
 * Source: [stackoverflow](https://stackoverflow.com/questions/58382779/serverless-deploy-function-not-found)
 </details>
+</details>
 
 ### Run lambda function locally
+<details>
+  <summary>How to run lambda functions locally with serverless</summary>
 Serverless allows you to run your lambda function locally for testing instead of having to be on the AWS console to do it.    
 * Run your lambda function locally for dev/testing:
   * INSIDE of the lambda function directory, run: `sls invoke $function-name -l`.
   * The `-l` is for logging.
+</details>
