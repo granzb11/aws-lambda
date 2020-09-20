@@ -54,7 +54,8 @@ provider:
 <details>
   <summary>How to deploy to AWS with serverless.</summary>
   
-  
+<br>
+
 > Keep in mind that this deploys the WHOLE stack to AWS, not just your one function that you may have updated.
 > This deployment of the stack depending on the size of your application can end up taking a long time. Read the below
 > section to learn how to only deploy specific functions instead of the whole stack.      
