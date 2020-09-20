@@ -6,6 +6,7 @@ Serverless is a framework which aims to ease the pain of creating, deploying, ma
 ### Set up Serverless
 <details>
   <summary>How to set up serverless locally.</summary>
+  
   * Download Node:
     * `brew install node`
   * Download Serverless:
@@ -52,6 +53,7 @@ provider:
 ### Deploy lambda function to AWS
 <details>
   <summary>How to deploy lambda functions with serverless.</summary>
+  
 Serverless can deploy your lambda function directly into AWS.
 * Deploy lambda function to AWS:
   * INSIDE of the lambda function directory, run: `sls deploy -v`.
