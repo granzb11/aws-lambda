@@ -3,7 +3,10 @@
 ## Serverless Framework
 Serverless is a framework which aims to ease the pain of creating, deploying, managing, and debugging AWS Lambda functions.
 
-### Set up Serverless
+
+<details>
+  <summary>### Set up Serverless</summary>
+  
   * Download Node:
     * `brew install node`
   * Download Serverless:
@@ -18,6 +21,7 @@ Serverless is a framework which aims to ease the pain of creating, deploying, ma
     * Run the following command replacing arguments with $:
       * `serverless config credentials --provider aws --key $aws-key --secret $aws-secret --profile $aws-user-name`
       * Example: `serverless config credentials --provider aws --key AKIAV9F2PE5HVSIQO9PN --secret S0Mw5lmf7PScwdcYDq2+diY+ShAAHXTD0cAhufOx --profile serverless-admin`
+</details>
 
 ### Create Lambda Function Template
 Serverless has pre-built templates that help with creating new lambda functions and to deploy them to AWS. 
@@ -52,8 +56,6 @@ Serverless can deploy your lambda function directly into AWS.
 #### Errors encountered:
 <details>
   <summary>Serverless deploy - Function not found</summary>
-  
-1. 
 
 ```
 (base) ~/PycharmProjects/aws-lambda/hello-world-python$ sls deploy -v
