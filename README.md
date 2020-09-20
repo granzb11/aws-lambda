@@ -49,6 +49,7 @@ Serverless can deploy your lambda function directly into AWS.
   * Hop over to AWS and verify that your lambda function was successfully deployed.
   
 Errors encountered:
+
 1. 
 ```
 (base) ~/PycharmProjects/aws-lambda/hello-world-python$ sls deploy -v
